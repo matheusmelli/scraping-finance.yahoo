@@ -1,7 +1,7 @@
 # Scraping-finance.yahoo
 
 ## O que é o Scraping-finance.yahoo?
-  O scraping-finance.yahoo é uma ferramenta que permite a busca de dados do mercado financeiro do Estados Unidos, listando todas as ações do mercado.  
+  O scraping-finance.yahoo é uma ferramenta que permite a busca de dados do mercado financeiro, listando todas as ações na qual, ela fica armazenada em um cache durante 3 minutos e 13 segundos para que não seja necessário refazer a busca quando os parâmetros forem os mesmos.
 
 ## Ferramentas utilizadas
 - Python=3.9.4
@@ -14,7 +14,7 @@
 - pandas=1.2.3
 - Flask-Caching=1.10.1
 - lxml=4.6.3
-- Docker=20.10.5,
+- Docker=20.10.5
 
 ## Como utilizar
 - Clonar o projeto para sua maquina
@@ -33,3 +33,7 @@
   (Exemplo: docker build -t scraping -f Dockerfile .)
 - docker run -d -p 5000:5000 <**nome da imagem**>
 - abrir o link [http://localhost:5000/stocks](http://localhost:5000/stocks)
+
+## Exemplo de uso
+- curl http://localhost:5000/stocks?region=Brazil
+Ou no client de HTTP de preferência (PostMan,Insominia,etc...)
