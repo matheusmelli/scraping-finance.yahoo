@@ -1,1 +1,3 @@
 .scraping/dados.json
+_pycache_
+*.pyc
