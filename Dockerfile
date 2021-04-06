@@ -27,4 +27,4 @@ RUN pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org -r
 COPY . .
 
 #Executa o python3,flask e seta o HOST
-CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
+CMD ["python3","routes.py", "-m" , "flask", "run", "--host=0.0.0.0"]
